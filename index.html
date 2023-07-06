@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{display:flex;flex-direction:column;overflow:hidden;margin:0;height:100vh;font-size:30px;}
+    .header{height: 15vh;background-color:skyblue;}
+    .links{display:flex;justify-content: space-around;align-items: center;height:100%;color:#fff;}
+    .content{display:flex;justify-content: space-between;flex-grow:1;}
+    .button{align-self: center;font-size:30px;}
+    .sidebar{width:15vw;background-color:greenyellow;}
+    .footer{height:15vh;color:#fff;background-color:#222;transform:translateY(100%);}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="links">
+            <div class="link">Link 1</div>
+            <div class="link">Link 2</div>
+            <div class="link">Link 3</div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="sidebar left"></div>
+        <button class="button">Reverse</button>
+        <div class="sidebar right"></div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>
